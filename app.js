@@ -33,11 +33,9 @@ speak('Здравствуйте, введите пожалуйста текст 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector('.form')
   const input = form.querySelector('.input')
-  console.log
   form.addEventListener('submit', (e) => {
     e.preventDefault()
     const text = input.value
-
     speak(getFirstVowelSubstring(text));
   })
 });
