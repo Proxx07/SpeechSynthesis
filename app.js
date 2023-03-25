@@ -28,8 +28,6 @@ const speak = (text) => {
   synth.speak(utterance);
 };
 
-speak('Здравствуйте, введите пожалуйста текст и нажмите на кнопку');
-
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector('.form')
   const input = form.querySelector('.input')
@@ -38,4 +36,5 @@ document.addEventListener("DOMContentLoaded", () => {
     const text = input.value
     speak(getFirstVowelSubstring(text));
   })
+  speak('Здравствуйте, введите пожалуйста текст и нажмите на кнопку');
 });
